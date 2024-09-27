@@ -11,7 +11,7 @@ volumes:
       path: /var/run/docker.sock
 
 workspace:
-  path: /go/src/github.com/mikefarah/yq
+  path: /go/src/github.com/mikefarah/yq/v4
 
 clone:
   disable: true
