@@ -1,4 +1,3 @@
-.language:.beagle/build.sh
 #!/bin/bash
 
 set -ex

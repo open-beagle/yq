@@ -15,19 +15,11 @@ git merge v4.9.8
 ```bash
 # cross
 docker run -it \
---rm \
--v $PWD/:/go/src/github.com/mikefarah/yq/v4 \
--w /go/src/github.com/mikefarah/yq/v4 \
-registry.cn-qingdao.aliyuncs.com/wod/golang:1.22 \
-bash .beagle/build.sh
-
-# loong64
-docker run -it \
---rm \
--v $PWD/:/go/src/github.com/mikefarah/yq/v4 \
--w /go/src/github.com/mikefarah/yq/v4 \
-registry.cn-qingdao.aliyuncs.com/wod/golang:1.22-loongnix \
-bash .beagle/build-loong64.sh
+  --rm \
+  -v $PWD/:/go/src/github.com/mikefarah/yq/v4 \
+  -w /go/src/github.com/mikefarah/yq/v4 \
+  registry.cn-qingdao.aliyuncs.com/wod/golang:1.24-alpine \
+  bash .beagle/build.sh
 ```
 
 ## cache
